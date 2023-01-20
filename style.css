@@ -7,7 +7,7 @@ body {
     align-items:center;
     display: flex;
     box-sizing: border-box;
-
+    
 }
 
 .container {
@@ -15,67 +15,62 @@ body {
     border-radius: 8px;
     width: 300px;
     background-color: white;
-    align-items: center;
+    
 }
 
 .planbox {
     background-color: rgb(200, 200, 238);
-    width: 80%;
-    align-items: center;
+    width: 240px;
     margin: 2em auto;
     max-width: 90%;
     padding: 1em 1em;
-    flex-wrap: wrap;
-    display: flex;
-    border-radius: 22px;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: [main-start] 3fr [content-start] 4fr [content-end] 3fr [main-end];
-    grid-template-rows: [main-start] 1fr [content-start] 1fr [main-end];
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 30px 30px;
    
     
 }
 
 .icon img {
-    width: 90%;
+    width: 60px;
     border-radius: 50%;
-    border: 2px solid black;
-    grid-column-start: main-start;
-    grid-column-end: content-start;
-    grid-row-start: main-start;
-    grid-row-end: main-end;
-    align-self: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+   
 }
 
 .plan {
     font-weight: bold;
     font-size: 0.8em;
     text-align: center;
-    border: 2px solid black;
-    grid-column-start: content-start;
-    grid-column-end: content-end;
-    grid-row-start: main-start;
-    grid-row-end: content-start;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     
 }
 
-.price{
+.price {
     font-size: 0.6em;
     text-align: center;
-    border: 2px solid black;
-    grid-column-start: content-start;
-    grid-column-end: content-end;
-    grid-row-start: content-start;
-    grid-row-end: main-end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .changebutton {
     text-decoration: underline;
-    text-align: end;
-    border: 2px solid black;
-    grid-column-start: content-end;
-    grid-column-end: main-end;
-    grid-row-start: main-start;
-    grid-row-end: main-end;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    font-size: 10px;
+    justify-self: center;
 }
 
 .header {
@@ -91,17 +86,41 @@ body {
 .proceedbutton {
     text-align: center;
     margin-bottom: 1em;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    box-shadow: 1px 2px 2px 0px rgb(77, 77, 77);
-
+    outline: none;
+    box-shadow: 0px 3px 0px 0px rgb(77, 77, 77);
+    width: 70%;
+    margin: 0.5em auto;
+    padding: 1em;
+    background-color: rgb(96, 96, 247);
+    border-radius: 15px;
+    border:none;
 }
 
 .cancelbutton {
     text-align: center;
-    padding-bottom: 3em;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    box-shadow: 1px 2px 2px 0px rgb(77, 77, 77);
-    background-color: rgb(40, 40, 201);
+    padding: 1em;
+    width: 70%;
+    margin: 0.5em auto;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    margin-top: 1em;
+   
+}
+
+body .planbox a {
+    text-decoration: underline;
+    color:black;
+}
+
+body .proceedbutton a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body .cancelbutton a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    
 }
