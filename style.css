@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(190, 241, 224);
+    margin:auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 300px;
+    background-color: white;
+    align-items: center;
+}
+
+.planbox {
+    background-color: rgb(200, 200, 238);
+    width: 80%;
+    align-items: center;
+    margin: 2em auto;
+    max-width: 90%;
+    padding: 1em 1em;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 22px;
+    display: grid;
+    grid-template-columns: [main-start] 3fr [content-start] 4fr [content-end] 3fr [main-end];
+    grid-template-rows: [main-start] 1fr [content-start] 1fr [main-end];
+   
+    
+}
+
+.icon img {
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid black;
+    grid-column-start: main-start;
+    grid-column-end: content-start;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+    align-self: auto;
+}
+
+.plan {
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    border: 2px solid black;
+    grid-column-start: content-start;
+    grid-column-end: content-end;
+    grid-row-start: main-start;
+    grid-row-end: content-start;
+    
+}
+
+.price{
+    font-size: 0.6em;
+    text-align: center;
+    border: 2px solid black;
+    grid-column-start: content-start;
+    grid-column-end: content-end;
+    grid-row-start: content-start;
+    grid-row-end: main-end;
+}
+
+.changebutton {
+    text-decoration: underline;
+    text-align: end;
+    border: 2px solid black;
+    grid-column-start: content-end;
+    grid-column-end: main-end;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.todo {
+    text-align: center;
+}
+
+.proceedbutton {
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 1px 2px 2px 0px rgb(77, 77, 77);
+
+}
+
+.cancelbutton {
+    text-align: center;
+    padding-bottom: 3em;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 1px 2px 2px 0px rgb(77, 77, 77);
+    background-color: rgb(40, 40, 201);
+}
